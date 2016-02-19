@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.DmgDevelopment.PhotoToAlbum"
+        version="0.0.1">
+
+  <name>PhotoToAlbum</name>
+
+  <description>
+	Plugin adds photo from url to download photos album in iOS.
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/PhotoToAlbum.js" name="PhotoToAlbum">
+    <clobbers target="window.plugins.phototoalbum" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="PhotoToAlbum">
+        <param name="ios-package" value="PhotoToAlbum"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/PhotoToAlbum.h"/>
+    <source-file src="src/ios/PhotoToAlbum.m"/>
+
+    <framework src="Social.framework" />
+    <framework src="MessageUI.framework" />
+  </platform>
+
+</plugin>

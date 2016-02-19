@@ -1,0 +1,17 @@
+{
+  "version": "4.0.2",
+  "name": "com.dmgdevelopment.phototoalbum",
+  "cordova_name": "PhotoToAlbum",
+  "description": "Cordova 3 plugin which allows you to add photo from URL to download photos album in ios.",
+  "license": "MIT",
+  "repo": "",
+  "keywords": [
+    " ios",
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ]
+}
