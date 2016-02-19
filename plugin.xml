@@ -18,13 +18,6 @@
   <js-module src="www/PhotoToAlbum.js" name="PhotoToAlbum">
     <clobbers target="window.plugins.phototoalbum" />
   </js-module>
-
-    <!-- android -->
-    <platform name="android">
-
-        <source-file src="src/android/PhotoToAlbum.java" />
-
-    </platform>
   
   <!-- ios -->
   <platform name="ios">

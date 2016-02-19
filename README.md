@@ -1,5 +1,5 @@
 # PhotoToAlbum
-## Apache Cordova plugin
+## Apache Cordova plugin for iOS
 **Note** This is an old pice of code that I wrote while working on a mobile app in 2014. This repo servs mostly as and archive.
 
 ###Usage:
@@ -10,7 +10,7 @@ In your javascript add:
 		
 		window.plugins.phototoalbum.download(url, successCallback, failCallback);
 
-_I used it for iOS, in Android I see in my old code that I used the following code:_
+_This works for iOS, in Android I see in my old code that I used the following:_
     
     window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
 		
@@ -31,3 +31,5 @@ _I used it for iOS, in Android I see in my old code that I used the following co
           }
         );
     }
+
+This will save the photo, but will appear in the gallery only after it's refreshed, so probably after the phone is restarted.
