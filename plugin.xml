@@ -6,7 +6,7 @@
   <name>PhotoToAlbum</name>
 
   <description>
-	Plugin adds photo from url to download photos album in iOS.
+	Plugin adds photo from url to download photos album in iOS and Android.
   </description>
 
   <license>MIT</license>
@@ -19,6 +19,13 @@
     <clobbers target="window.plugins.phototoalbum" />
   </js-module>
 
+    <!-- android -->
+    <platform name="android">
+
+        <source-file src="src/android/PhotoToAlbum.java" />
+
+    </platform>
+  
   <!-- ios -->
   <platform name="ios">
 
